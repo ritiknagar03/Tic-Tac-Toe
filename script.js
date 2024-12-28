@@ -31,9 +31,11 @@ var box1 = document.getElementById('box1');
                 if(box1.innerText === 'X'){
                     message = 'X is the winner';
                     messageBox.innerHTML = message;
+                    gameReset();
                 }else{
                     message = 'O is the winner';
                     messageBox.innerHTML = message;
+                    gameReset();
                 }
             }
             else if((box1.innerText === box4.innerHTML && box1.innerText === box7.innerHTML) && box1.innerText != ''){
@@ -43,9 +45,11 @@ var box1 = document.getElementById('box1');
                 if(box1.innerText === 'X'){
                     message = 'X is the winner';
                     messageBox.innerHTML = message;
+                    gameReset();
                 }else{
                     message = 'O is the winner';
                     messageBox.innerHTML = message;
+                    gameReset();
                 }
             }
             else if((box1.innerText === box5.innerHTML && box1.innerText === box9.innerHTML) && box1.innerText != ''){
@@ -55,9 +59,11 @@ var box1 = document.getElementById('box1');
                 if(box1.innerText === 'X'){
                     message = 'X is the winner';
                     messageBox.innerHTML = message;
+                    gameReset();
                 }else{
                     message = 'O is the winner';
                     messageBox.innerHTML = message;
+                    gameReset();
                 }
             }
             else if((box4.innerText === box5.innerHTML && box4.innerText === box6.innerHTML) && box4.innerText != ''){
@@ -67,9 +73,11 @@ var box1 = document.getElementById('box1');
                 if(box4.innerText === 'X'){
                     message = 'X is the winner';
                     messageBox.innerHTML = message;
+                    gameReset();
                 }else{
                     message = 'O is the winner';
                     messageBox.innerHTML = message;
+                    gameReset();
                 }
             }
             else if((box7.innerText === box8.innerHTML && box7.innerText === box9.innerHTML) && box7.innerText != ''){
@@ -79,9 +87,11 @@ var box1 = document.getElementById('box1');
                 if(box7.innerText === 'X'){
                     message = 'X is the winner';
                     messageBox.innerHTML = message;
+                    gameReset();
                 }else{
                     message = 'O is the winner';
                     messageBox.innerHTML = message;
+                    gameReset();
                 }
             }
             else if((box2.innerText === box5.innerHTML && box2.innerText === box8.innerHTML) && box2.innerText != ''){
@@ -91,9 +101,11 @@ var box1 = document.getElementById('box1');
                 if(box2.innerText === 'X'){
                     message = 'X is the winner';
                     messageBox.innerHTML = message;
+                    gameReset();
                 }else{
                     message = 'O is the winner';
                     messageBox.innerHTML = message;
+                    gameReset();
                 }
             }
             else if((box3.innerText === box6.innerHTML && box3.innerText === box9.innerHTML) && box3.innerText != ''){
@@ -103,9 +115,11 @@ var box1 = document.getElementById('box1');
                 if(box3.innerText === 'X'){
                     message = 'X is the winner';
                     messageBox.innerHTML = message;
+                    gameReset();
                 }else{
                     message = 'O is the winner';
                     messageBox.innerHTML = message;
+                    gameReset();
                 }
             }
             else if((box3.innerText === box5.innerHTML && box3.innerText === box7.innerHTML) && box3.innerText != ''){
@@ -115,9 +129,11 @@ var box1 = document.getElementById('box1');
                 if(box3.innerText === 'X'){
                     message = 'X is the winner';
                     messageBox.innerHTML = message;
+                    gameReset();
                 }else{
                     message = 'O is the winner';
                     messageBox.innerHTML = message;
+                    gameReset();
                 }
             }
         }
@@ -129,61 +145,75 @@ var box1 = document.getElementById('box1');
                 messageBox.style.boxShadow = '0px 0px 5px 3px rgba(181, 178, 181, 0.551)';
                 message = "It's a Draw";
                 messageBox.innerHTML = message;
+                gameReset();
             }
+            
+        }
+
+        function gameReset(){
+            box1.innerHTML = '';
+            box2.innerHTML = '';
+            box3.innerHTML = '';
+            box4.innerHTML = '';
+            box5.innerHTML = '';
+            box6.innerHTML = '';
+            box7.innerHTML = '';
+            box8.innerHTML = '';
+            box9.innerHTML = '';
         }
 
         box1.addEventListener('click', ()=>{
             box1.innerHTML = chance;
-            checkWinner();
             checkDraw();
+            checkWinner();
             changeChance();
         })
         box2.addEventListener('click', ()=>{
             box2.innerHTML = chance;
-            checkWinner();
             checkDraw();
+            checkWinner();
             changeChance();
         })
         box3.addEventListener('click', ()=>{
             box3.innerHTML = chance;
-            checkWinner();
             checkDraw();
+            checkWinner();
             changeChance();
         })
 
         box4.addEventListener('click', ()=>{
             box4.innerHTML = chance;
-            checkWinner();
             checkDraw();
+            checkWinner();
             changeChance();
         })
         box5.addEventListener('click', ()=>{
             box5.innerHTML = chance;
-            checkWinner();
             checkDraw();
+            checkWinner();
             changeChance();
         })
         box6.addEventListener('click', ()=>{
             box6.innerHTML = chance;
-            checkWinner();
             checkDraw();
+            checkWinner();
             changeChance();
         })
         box7.addEventListener('click', ()=>{
             box7.innerHTML = chance;
-            checkWinner();
             checkDraw();
+            checkWinner();
             changeChance();
         })
         box8.addEventListener('click', ()=>{
             box8.innerHTML = chance;
-            checkWinner();
             checkDraw();
+            checkWinner();
             changeChance();
         })
         box9.addEventListener('click', ()=>{
             box9.innerHTML = chance;
-            checkWinner();
             checkDraw();
+            checkWinner();
             changeChance();
         })
