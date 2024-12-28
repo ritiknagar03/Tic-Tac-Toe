@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; 
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    gap: 15px;
+}
+.container{
+    width: 321px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98px;
+    height: 99px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 3px rgba(181, 178, 181, 0.551);
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.message{
+    width: 300px;
+    padding: 15px 9px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+}

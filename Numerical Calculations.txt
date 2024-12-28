@@ -1,0 +1,9 @@
+total possibilities of winning: 
+case1 = [1,2,3]
+case2 = [4,5,6]
+case3 = [7,8,9]
+case4 = [1,4,7]
+case5 = [2,5,8]
+case6 = [3,6,9]
+case7 = [1,5,9]
+case8 = [3,5,7]
